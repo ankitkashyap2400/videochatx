@@ -1,0 +1,433 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================
+   MEETING PAGE
+========================================= */
+
+.meeting-page {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #1f2937 0%,
+            #111827 40%,
+            #080b12 100%
+        );
+
+    color: #ffffff;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.meeting-card {
+    width: 100%;
+    max-width: 620px;
+
+    background: #151922;
+
+    border: 1px solid #2b3140;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.45);
+
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin-bottom: 35px;
+}
+
+.brand-icon {
+    color: #4f8cff;
+
+    font-size: 20px;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.meeting-content {
+    text-align: center;
+}
+
+.meeting-content h1 {
+    margin: 0;
+
+    font-size: 36px;
+
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.subtitle {
+    margin-top: 12px;
+
+    margin-bottom: 18px;
+
+    color: #a9b0bd;
+
+    font-size: 16px;
+}
+
+.meeting-id {
+    color: #9ca3af;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+.meeting-id strong {
+    color: #ffffff;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   NAME SECTION
+========================================= */
+
+.name-section {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+    
+    text-align: left;
+}
+
+.name-section label {
+    white-space: nowrap;
+
+    color: #d1d5db;
+
+    font-size: 14px;
+    margin-left:20px;
+}
+
+.name-section input {
+    flex: 1;
+
+    height: 48px;
+
+    background: #0f131b;
+
+    color: #ffffff;
+
+    border: 1px solid #343b4a;
+
+    border-radius: 10px;
+
+    padding: 0 24px;
+  
+    font-size: 15px;
+
+    outline: none;
+    
+
+    margin-left:20px;
+    transition: border 0.2s;
+}
+
+.name-section input:focus {
+    border-color: #4f8cff;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 140, 255, 0.15);
+}
+
+.name-section input::placeholder {
+    color: #6b7280;
+}
+
+
+/* =========================================
+   JOIN BUTTON
+========================================= */
+
+.join-button {
+    height: 48px;
+
+    padding: 0 22px;
+    margin-left:20px;
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f8cff;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+
+.join-button:hover {
+    background: #3b76e8;
+
+    transform: translateY(-1px);
+}
+
+.join-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-message {
+    margin-top: 15px;
+
+    color: #ff6b6b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.divider {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 35px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+
+    flex: 1;
+
+    height: 1px;
+
+    background: #303644;
+}
+
+.divider span {
+    color: #737b89;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   INVITE
+========================================= */
+
+.invite-section {
+    text-align: center;
+}
+
+.invite-section h2 {
+    margin: 0;
+
+    font-size: 20px;
+
+    color: #ffffff;
+}
+
+.invite-section p {
+    margin: 8px 0 20px;
+
+    color: #9ca3af;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   SHARE LINK
+========================================= */
+
+.share-container {
+    display: flex;
+
+    gap: 10px;
+}
+
+.share-container input {
+    flex: 1;
+
+    height: 46px;
+
+    background: #0f131b;
+
+    color: #d1d5db;
+
+    border: 1px solid #343b4a;
+
+    border-radius: 9px;
+
+    padding: 0 12px;
+
+    font-size: 13px;
+
+    outline: none;
+}
+
+.copy-button {
+    height: 46px;
+
+    padding: 0 20px;
+
+    margin:20px;
+    border: 1px solid #3b82f6;
+
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: #60a5fa;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s,
+        color 0.2s;
+}
+
+.copy-button:hover {
+    background: #3b82f6;
+
+    color: white;
+}
+
+
+
+
+.email-invite-button {
+    width: 100%;
+    height:50px;
+    margin-top: 10px;
+    padding: 24px;
+    border: none;
+    border-radius: 8px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.email-invite-button:hover {
+    background: #333;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .meeting-page {
+        padding: 20px;
+    }
+
+    .meeting-card {
+        padding: 28px 20px;
+
+        border-radius: 16px;
+    }
+
+    .meeting-content h1 {
+        font-size: 30px;
+    }
+
+    .name-section {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .name-section label {
+        margin-bottom: -5px;
+    }
+
+    .join-button {
+        width: 100%;
+    }
+
+    .share-container {
+        flex-direction: column;
+    }
+
+    .copy-button {
+        width: 100%;
+    }
+}
+.name-input{
+  margin-left:10px;
+}
+
